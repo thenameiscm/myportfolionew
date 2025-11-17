@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import profileImage from "@/assets/profile.jpg";
 
 const Hero = () => {
   return (
@@ -8,6 +9,18 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          {/* Profile Image */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary-glow to-primary rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+              <img
+                src={profileImage}
+                alt="Chandra Mouli Manepalli"
+                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-background shadow-2xl"
+              />
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm <span className="text-gradient">Chandra Mouli</span>
           </h1>
